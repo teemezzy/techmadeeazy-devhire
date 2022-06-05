@@ -9,6 +9,7 @@ const AppContentContainer = styled.div`
   padding: 0 20px;
   width: calc(100vw-230px);
   overflow: hidden;
+  background-color:#fffff;
 
   @media (min-width: 768px) {
     margin-left: 230px;
@@ -30,7 +31,7 @@ const AppContent = styled.div`
   }
 
   @media (min-width: 768px) {
-    \ .hamburger {
+     .hamburger {
       display: none;
     }
   }
