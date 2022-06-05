@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import ReactPaginate from "react-paginate";
 import { useSelector } from "react-redux";
-import { PageHeader } from "../components";
+import { Header } from "../components";
 import FreelancerCard, { FreeLancerLoader } from "../components/FreelancerCard";
 import { PaginateContainer } from "../styles/ReactPaginateStyle";
 
@@ -60,7 +60,7 @@ const Favorites = ({ toggleFavoriteFreelancer }) => {
   return (
     <Container>
       <Wrapper>
-        <PageHeader>Favorites</PageHeader>
+        <Header>Favorites</Header>
         {loading ? (
           <div className="freelancers-container">
             {Array(5)

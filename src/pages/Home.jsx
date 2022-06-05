@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import styled from "styled-components";
 import ReactPaginate from "react-paginate";
 
-import { PageHeader } from "../components";
+import { Header } from "../components";
 import FreelancerCard, { FreeLancerLoader } from "../components/FreelancerCard";
 import { PaginateContainer } from "../styles/ReactPaginateStyle";
 
@@ -56,7 +56,7 @@ const Home = ({ toggleFavoriteFreelancer }) => {
   return (
     <Container>
       <Wrapper>
-        <PageHeader>Hire Top Developers</PageHeader>
+        <Header>Hire Top Developers</Header>
         {loading ? (
           <div className="freelancers-container">
             {Array(12)
