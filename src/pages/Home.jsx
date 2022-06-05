@@ -59,7 +59,7 @@ const Home = ({ toggleFavoriteFreelancer }) => {
         <PageHeader>Hire Top Developers</PageHeader>
         {loading ? (
           <div className="freelancers-container">
-            {Array(10)
+            {Array(12)
               .fill(undefined)
               .map((_, i) => {
                 return <FreeLancerLoader key={i} />;
