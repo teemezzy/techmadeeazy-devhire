@@ -1,9 +1,9 @@
-import currency from './slices/currencySlice';
-import freelancer from './slices/freelancerSlice';
+import currency from "./slices/currencySlice";
+import freelancer from "./slices/freelancerSlice";
 
 const reducer = {
-	currency,
-	freelancer,
+  currency,
+  freelancer,
 };
 
 export default reducer;
