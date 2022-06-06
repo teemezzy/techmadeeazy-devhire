@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ReactPaginate from "react-paginate";
 
 import { Header } from "../components";
-import FreelancerCard, { FreeLancerLoader } from "../components/FreelancerCard";
+import Card, { FreeLancerLoader } from "../components/Card";
 import { PaginateContainer } from "../styles/ReactPaginateStyle";
 
 const Container = styled.div`
@@ -70,7 +70,7 @@ const Home = ({ toggleFavoriteFreelancer }) => {
             {currentItems &&
               currentItems.map((freelancer) => {
                 return (
-                  <FreelancerCard
+                  <Card
                     key={freelancer._source.cust_id}
                     data={freelancer}
                     toggleFavoriteFreelancer={toggleFavoriteFreelancer}

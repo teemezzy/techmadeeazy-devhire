@@ -90,7 +90,7 @@ const Nav = styled.nav`
   }
 `;
 
-const AppSidebar = ({ showSidebar, setShowSidebar }) => {
+const Sidebar = ({ showSidebar, setShowSidebar }) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   const breakpoint = 768;
@@ -163,4 +163,4 @@ const AppSidebar = ({ showSidebar, setShowSidebar }) => {
   );
 };
 
-export default AppSidebar;
+export default Sidebar;

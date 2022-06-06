@@ -1,5 +1,5 @@
 import Header from "./Header";
-import AppSidebar from "./AppSidebar";
-import AppFooter from "./AppFooter";
+import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 import SideLayout from "./SideLayout";
-export { Header, SideLayout, AppSidebar, AppFooter };
+export { Header, SideLayout, Sidebar, Footer };

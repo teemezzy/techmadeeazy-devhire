@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 
-import { AppSidebar, AppFooter } from ".";
+import { Sidebar, Footer } from ".";
 
 const AppContentContainer = styled.div`
   position: relative;
@@ -53,7 +53,7 @@ const DefaultLayout = () => {
 
   return (
     <>
-      <AppSidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <AppContentContainer>
         <AppContent style={{ minHeight: `calc(100vh - ${footerHeight}px)` }}>
           <div
@@ -75,7 +75,7 @@ const DefaultLayout = () => {
           </div>
           <Outlet />
         </AppContent>
-        <AppFooter />
+        <Footer />
       </AppContentContainer>
     </>
   );

@@ -70,7 +70,7 @@ const Container = styled.div`
   }
 `;
 
-const AppFooter = () => {
+const Footer = () => {
   const [currencyDropdown, setCurrencyDropdown] = useState(false);
   const dispatch = useDispatch();
   const { currencies, currency } = useSelector((state) => state.currency);
@@ -124,4 +124,4 @@ const AppFooter = () => {
   );
 };
 
-export default AppFooter;
+export default Footer;

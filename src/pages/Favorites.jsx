@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ReactPaginate from "react-paginate";
 import { useSelector } from "react-redux";
 import { Header } from "../components";
-import FreelancerCard, { FreeLancerLoader } from "../components/FreelancerCard";
+import Card, { FreeLancerLoader } from "../components/Card";
 import { PaginateContainer } from "../styles/ReactPaginateStyle";
 
 const Container = styled.div`
@@ -76,7 +76,7 @@ const Favorites = ({ toggleFavoriteFreelancer }) => {
             {currentItems &&
               currentItems.map((freelancer) => {
                 return (
-                  <FreelancerCard
+                  <Card
                     data={freelancer}
                     filled
                     key={freelancer._source.cust_id}
