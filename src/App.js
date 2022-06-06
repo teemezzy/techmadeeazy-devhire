@@ -10,13 +10,11 @@ import {
   toggleFreelancer,
 } from "./redux/slices/freelancerSlice";
 
-
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchFreelancers());
-    
   }, []);
 
   const toggleFavoriteFreelancer = (id) => {
